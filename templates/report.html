@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static\report.css">
+</head>
+<body>
+
+    <!-- Navigation bar on the top  -->
+     <div class="navbar">
+        <div class="name">
+            <a href="/">Happiness</a>
+        </div>
+        <div class="right">
+            <div class="score">
+            <a href="/score">Happiness Score</a>
+            </div>
+            <div class="about">
+            <a href="/about">About</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="home">
+        <!-- Horizontal 1st half of the page -->
+        <div class="instruction">
+            <h1>Generate</h1>
+            <h1 style="color: rgb(50, 117, 151);">Happiness Report</h1>
+            <h4 style="font-weight: 400; color: rgb(44, 153, 129);">Enter the parameters in the given form and <br>
+                click on the submit button to generate the Happiness Score.</h4>
+            <div class="result">
+                <h2>Predicted Happiness Score:</h2>
+                <h2 style="color: #333;; margin-top: 4px;">{{ happiness_score }}</h2>
+            </div>
+        </div>
+
+        <!-- Container for form  -->
+        <div class="container">
+            <!-- the actual form  -->
+            <form action="/generate_report" method="post">
+                <label for="country">Country</label><br>
+                <input type="text" id="country" name="country"><br>
+                <label for="region">Region</label><br>
+                <input type="region" id="region" name="region"><br>
+                <label for="happinessRank">Happiness Rank</label><br>
+                <input type="text" id="happinessRank" name="happinessRank"><br>
+                <label for="standardError">Standard Error</label><br>
+                <input type="text" id="standardError" name="standardError"><br>
+                <label for="gdp">Per Capita GDP</label><br>
+                <input type="text" id="gdp" name="gdp"><br>
+                <label for="family">Family</label><br>
+                <input type="text" id="family" name="family"><br>
+                <label for="lifeExpectancy">Life Expectancy</label><br>
+                <input type="text" id="lifeExpectancy" name="lifeExpectancy"><br>
+                <label for="freedom">Freedom</label><br>
+                <input type="text" id="freedom" name="freedom"><br>
+                <label for="corruption">Government Corruption</label><br>
+                <input type="text" id="corruption" name="corruption"><br>
+                <label for="generosity">Generosity</label><br>
+                <input type="text" id="generosity" name="generosity"><br>
+                <label for="distopiaResidual">Distopia Residual</label><br>
+                <input type="text" id="distopiaResidual" name="distopiaResidual"><br>
+                <button type="submit">Submit</button>
+            </form>           
+        </div>
+    </div>
+
+</body>
+</html>
