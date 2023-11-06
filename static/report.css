@@ -1,0 +1,119 @@
+
+*{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    background-color: rgb(56, 195, 165);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.name{
+    font-size: 35px;
+    font-weight: 700;
+    padding: 15px;
+    width: 200px;
+}
+.right{
+    font-size: 25px;
+    font-weight: 600;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.score{
+    width: 60%;
+    margin-left: 60px;
+}
+.about{
+    width: 30%;
+}
+a{
+    text-decoration: none; 
+    color: black;
+}
+
+.home{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instruction{
+    flex: 0.5;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+.container{
+    flex: 0.5;
+
+}
+form{
+    /* border: 1px solid seagreen; */
+    width: 440px;
+    height: 660px;
+    margin-left: 100px;
+    margin-top: 35px;
+    color: #144d3d;
+    background-color: rgba(56, 195, 165, 0.2);
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+form label{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 3.5px;
+}
+form input{
+    width: 50%;
+    height: 25px;
+    margin: 3.5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+button{
+    width: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    color: white;
+    background-color:  rgb(28, 125, 167);;
+}
+
+.result{
+    width: 500px;
+    height: 100px;
+    margin-left: 110px;
+    margin-top: 30px;
+    padding: 15px;
+    color: brown;
+    text-align: center;
+    color: rgb(50, 117, 151);
+    background-color: rgba(56, 195, 165, 0.2);
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+
